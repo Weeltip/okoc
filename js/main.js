@@ -62,21 +62,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-    const swiper = new Swiper('.tip__slider', {
-      // Настройки Swiper
-      speed:800,
-      loop: true, // Бесконечная прокрутка
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-    });
-  });
 
 
   

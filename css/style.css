@@ -159,21 +159,17 @@ h6 {
 
 /* ======================================================общие стили ============================*/
 
-/*   font-family: "arialmt", sans-serif; */
-
 :root{
   --c1:#1F9970;
   --c2:#FFFFFF;
   --c3:#FFFFFFCC;
   --c4:#201940;
-  
   --font-bedas-r:"Bebas-R", sans-serif;
 }
 
 
 .main_btn{
   font-size: 24px;
-  line-height: 24px;
   letter-spacing: 0.02rem;
   color: var(--c2);
   padding: 30px 60px 25px;
@@ -186,7 +182,6 @@ h6 {
 } 
 .des_btn{
   font-size: 24px;
-  line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 0.02em;
   color: var(--c1);
@@ -247,7 +242,6 @@ header{
   margin-bottom: 307px;
 }
 .header-two__container p{
-  line-height: 24px;
   color: var(--c2);
   max-width: 915px;
 }
@@ -263,7 +257,6 @@ header{
   gap: 40px;
 }
 .header .menu__link{
-  line-height: 24px;
   color: var(--c2);
   transition: all 0.5s ease 0s;
 }
@@ -282,7 +275,6 @@ header{
 .header .link-tel p{
   font-family: var(--font-bedas-r);
   font-size: 24px;
-  line-height: 24px;
   letter-spacing: 0.02em;
   color: var(--c2);
 }
@@ -312,7 +304,6 @@ header{
 .podmenu a {
   background: var(--c2);
   width: 100%;
-  line-height: 24px;
   color: var(--c4);
   text-decoration: underline;
   text-align: center;
@@ -344,8 +335,8 @@ header{
 }
 
 .podmenu li:last-child {
-  border-bottom: none; /* Убираем нижнюю границу у последнего элемента */
-  padding-bottom: 36px; /* Отступ только у последнего элемента */
+  border-bottom: none; 
+  padding-bottom: 36px; 
   background: var(--c2);
 }
 
@@ -384,8 +375,8 @@ header{
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: auto; /* Сохраняет исходную ширину */
-  height: 100%; /* Подстраивает высоту */
+  width: auto; 
+  height: 100%; 
   z-index: -1;
 }
 .name::after{
@@ -436,7 +427,6 @@ color: var(--c1);
 }
 .ao__container p{
   font-family: "arial", sans-serif;
-  line-height: 24px;
   margin-bottom: 40px;
   color: var(--c4);
 }
@@ -508,7 +498,6 @@ display: flex;
   color: var(--c2);
 }
 .connect__bottom-block button{
-  line-height: 24px;
   border: 1px solid #FFFFFF;
   border-radius: 50px;
   padding: 16px 36px;
@@ -714,7 +703,6 @@ footer{
   margin-top: 60px;
   display: flex;
   margin-bottom: 111px;
-  flex-wrap: wrap;
   gap: 36px 20px;
 }
 .footer__center div{
@@ -836,6 +824,12 @@ h2{
 .we .we-block {
   padding: 20px;
 }
+}
+
+@media (max-width: 1150px){
+  .footer__center{
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 1080px){
